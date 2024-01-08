@@ -1,29 +1,41 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
-    max-height: 100vh;
+    min-height: 100vh;
 }
-
-
+.container{
+    max-width: 100%;
+}
 nav{
-    background-color: #141B34;
+    background-color: transparent;
     height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 51.54px;
 }
+.hero{
+    box-sizing: border-box;
+    background-image: url(../assets/images/main-img.png);
+    background-size: cover;
+    height: 817px;
+    width: 100%;
+
+}
 .logo{
     width: 130.45px;
     height: 36px;
+    display: flex;
+    justify-content: flex-start;
 }
 .logo p{
     margin: 0;
-    font-family: 'inter';
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 800;
-    line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
     color: #fff;
     display: flex;
@@ -34,6 +46,8 @@ nav{
 }
 .links{
     height: 34px;
+    width: 538px;
+    justify-content: center;
 }
 .links ul{
     margin: 0;
@@ -55,25 +69,53 @@ nav{
     text-align: left;
 }
 .button{
-    width: 227px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 20px;
 }
-.login{
+.login, .register{
     padding: 7.88px 13.4px;
-    margin-right: 7.88px;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;
     letter-spacing: 0em;
-    text-align: left;
+    border: none;
     border-radius: 19.71px;
     background-color: #9747FF;
-
+    color: #D9D9D9;
+    cursor: pointer;
 }
 .register{
     padding: 7.88px 13.4px;
-    margin-left: 8.88px;
+    background-color: transparent;
+    border: 0.79px solid #9747FF;
 }
-
+main{
+    margin: 150px 0 0 55px;
+    width: 790px;
+    height: 254px;
+}
+main h2{
+    color:#F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 85px;
+    margin: 0;
+}
+.powerful{
+    color: #9747FF;
+}
+main p{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    color: #F5F5F5;
+}
+.btn{
+    text-align: center;
+    margin-top: 100px;
+}
