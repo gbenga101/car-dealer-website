@@ -1,48 +1,60 @@
+:root{
+    --color-purple: #9747FF;
+    --color-light-gradient: #9747FF, #FFFFFF5E; 
+    --color-white: #fff;
+    --color-white-red: #D9D9D9;
+    --color-smoke-white: #F5F5F5;
+}
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
 }
-.container{
-    max-width: 100%;
+body a{
+    text-decoration: none;
 }
+.hero{
+    height: 817px;
+    width: 100%;
+    background-image: url(../assets/images/main-img.png);
+    background-size: cover;
+    background-position: center;
+}
+/*styling the nav bar*/
 nav{
     background-color: transparent;
-    height: 130px;
+    height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 51.54px;
-}
-.hero{
-    box-sizing: border-box;
-    background-image: url(../assets/images/main-img.png);
-    background-size: cover;
-    height: 817px;
-    width: 100%;
-
 }
 .logo{
     width: 130.45px;
     height: 36px;
     display: flex;
     justify-content: flex-start;
+    cursor: pointer;
 }
 .logo p{
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 800;
-    text-align: left;
     color: #fff;
     display: flex;
     align-items: center;
 }
 .logo img{
     width: 25.04px;
+    transition: .3s;
+}
+.logo img:hover{
+    transform: rotate(360deg);
 }
 .links{
     height: 34px;
@@ -59,14 +71,17 @@ nav{
     padding: 0 20px;
 }
 .links a{
-    text-decoration: none;
     color: #D9D9D9;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
-    letter-spacing: 0em;
     text-align: left;
+}
+.links a:hover{
+    color: #9747FF;
+    transition: .4s;
+    font-weight: bold;
 }
 .button{
     display: flex;
@@ -79,27 +94,46 @@ nav{
     font-size: 25px;
     font-weight: 400;
     line-height: 31px;
-    letter-spacing: 0em;
-    border: none;
     border-radius: 19.71px;
-    background-color: #9747FF;
     color: #D9D9D9;
     cursor: pointer;
+    transition: .3s ease-in;
 }
-.register{
-    padding: 7.88px 13.4px;
+.login{
+    background-color: #9747FF;
+    border: none;
+}
+.login:hover{
+    transform: rotate(5deg);
     background-color: transparent;
+    color: #9747FF;
     border: 0.79px solid #9747FF;
 }
-main{
-    margin: 150px 0 0 55px;
+.register{
+    background-color: transparent;
+    color: #9747FF;
+    border: 0.79px solid #9747FF;
+}
+.register:hover{
+    transform: rotate(-5deg);
+    background-color: #9747FF;
+    color: #D9D9D9;
+    border: none;
+}
+/*done with the stying of nav bar for Desktop*/
+/*starting with the styling of content inside the main section*/
+#main-content{
+    margin: 137px 0 0 55px;
     width: 790px;
     height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-main h2{
+.main h1{
     color:#F5F5F5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+    font-size: 4.3rem;
     font-weight: 800;
     line-height: 85px;
     margin: 0;
@@ -107,15 +141,27 @@ main h2{
 .powerful{
     color: #9747FF;
 }
-main p{
+.main p{
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 34px;
     text-align: left;
     color: #F5F5F5;
+    margin: 42px 338px 70px 0;
 }
 .btn{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
+}
+.btn > a{
+    background: linear-gradient(180deg, #9747FF, #9747FF, #9747FF, #fff);
+    color: var(--color-white);
+    padding: 10.04px 17.07px;
+    border: 1.59px solid #9747FF;
+    border-radius: 50px;
+    box-shadow: 19.034381866455078px 31.72397232055664px 95.17192077636719px 15.86198616027832px #9747FF66;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
 }
