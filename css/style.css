@@ -1,6 +1,6 @@
 :root{
     --color-purple: #9747FF;
-    --color-light-gradient: #9747FF, #FFFFFF5E; 
+    --color-dark: #151924; 
     --color-white: #fff;
     --color-white-red: #D9D9D9;
     --color-smoke-white: #F5F5F5;
@@ -17,11 +17,16 @@ body a{
     text-decoration: none;
 }
 .hero{
-    height: 817px;
+    height: 100vh;
     width: 100%;
     background-image: url(../assets/images/main-img.png);
     background-size: cover;
     background-position: center;
+}
+/*give all class with "i-light" the following rule*/
+.i-light{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 /*styling the nav bar*/
 nav{
@@ -37,7 +42,6 @@ nav{
     width: 130.45px;
     height: 36px;
     display: flex;
-    justify-content: flex-start;
     cursor: pointer;
 }
 .logo p{
@@ -51,6 +55,7 @@ nav{
 }
 .logo img{
     width: 25.04px;
+    height: 25.04px;
     transition: .3s;
 }
 .logo img:hover{
@@ -72,9 +77,7 @@ nav{
 }
 .links a{
     color: #D9D9D9;
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
-    font-weight: 400;
     line-height: 34px;
     text-align: left;
 }
@@ -85,18 +88,14 @@ nav{
 }
 .button{
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
 }
 .login, .register{
     padding: 7.88px 13.4px;
-    font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 400;
-    line-height: 31px;
     border-radius: 19.71px;
     color: #D9D9D9;
-    cursor: pointer;
     transition: .3s ease-in;
 }
 .login{
@@ -120,10 +119,9 @@ nav{
     color: #D9D9D9;
     border: none;
 }
-/*done with the stying of nav bar for Desktop*/
-/*starting with the styling of content inside the main section*/
+/*done with the stying of nav bar for Desktop. starting with the styling of content inside the main section*/
 #main-content{
-    margin: 137px 0 0 55px;
+    margin: 85px 0 0 55px;
     width: 790px;
     height: 254px;
     display: flex;
@@ -136,16 +134,14 @@ nav{
     font-size: 4.3rem;
     font-weight: 800;
     line-height: 85px;
+    text-align: left;
     margin: 0;
 }
 .powerful{
     color: #9747FF;
 }
 .main p{
-    font-family: 'Inter', sans-serif;
     font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
     text-align: left;
     color: #F5F5F5;
     margin: 42px 338px 70px 0;
@@ -155,13 +151,57 @@ nav{
     margin-top: 30px;
 }
 .btn > a{
-    background: linear-gradient(180deg, #9747FF, #9747FF, #9747FF, #fff);
+    background: linear-gradient(10deg, #9747FF, #ba73db, #9747FF);
     color: var(--color-white);
     padding: 10.04px 17.07px;
     border: 1.59px solid #9747FF;
     border-radius: 50px;
-    box-shadow: 19.034381866455078px 31.72397232055664px 95.17192077636719px 15.86198616027832px #9747FF66;
-    font-family: 'Inter', sans-serif;
     font-size: 32px;
-    font-weight: 400;
+}
+.btn > a:hover{
+    box-shadow: 19.034381866455078px 31.72397232055664px 95.17192077636719px 15.86198616027832px #9747FF66;
+}
+/*Done with hero section moving to the about section*/
+.about-section{
+    background-color: var(--color-dark);
+}
+.card{
+    height: 654px;
+    display: flex;
+    padding: 68px 80px 58px 80px;
+    gap: 60px;
+}
+.left{
+    width: 100%;
+    box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
+}
+.left img{
+    width: 656px;
+    height: 500.26px;
+    border-radius: 30px;
+    background-color: var(--color-purple);
+}
+.right{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.right h3{
+    font-size: 40px;
+    margin: 6px 0 35px 94px;
+    color: var(--color-white);
+}
+.right p{
+    position: relative;
+    font-size: 28px;
+    line-height: 33.89px;
+    color: var(--color-white-red);
+    padding: 5px;
+    z-index: 1;
+}
+.right > img{
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+    width: 500px;
 }
