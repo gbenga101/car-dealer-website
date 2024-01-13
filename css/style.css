@@ -12,6 +12,7 @@
 }
 body{
     margin: 0;
+    background-color: var(--color-dark);
 }
 body a{
     text-decoration: none;
@@ -164,34 +165,33 @@ nav{
 /*Done with hero section moving to the about section*/
 .about-section{
     background-color: var(--color-dark);
+    padding: 68px 80px 20px;
 }
-.card{
+.about-section .card{
     height: 654px;
     display: flex;
-    padding: 68px 80px 58px 80px;
     gap: 60px;
 }
-.left{
+.about-section > .left, .right{
     width: 100%;
-    box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
 }
-.left img{
+.about-section .left img{
     width: 656px;
     height: 500.26px;
     border-radius: 30px;
     background-color: var(--color-purple);
+    box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
 }
-.right{
+.about-section .right{
     position: relative;
     height: 100%;
-    width: 100%;
 }
-.right h3{
+.about-section .right h3{
     font-size: 40px;
     margin: 6px 0 35px 94px;
     color: var(--color-white);
 }
-.right p{
+.about-section .right p{
     position: relative;
     font-size: 28px;
     line-height: 33.89px;
@@ -199,9 +199,67 @@ nav{
     padding: 5px;
     z-index: 1;
 }
-.right > img{
+.about-section .right > img{
     position: absolute;
     object-fit: cover;
     bottom: 0;
     width: 500px;
+}
+#brand-section{
+    height: auto;
+}
+#brand-section h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--color-white);
+    width: 312px;
+    margin: 0 auto;
+}
+#brand-section > .bcard{
+    padding: 16px 80px 29px;
+    display: flex;
+    gap: 30px;
+}
+.bcard .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.bcard  .left img{
+    width: 715px;
+    height: 326px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 5px 10px 50px 0px rgba(151, 71, 255, 0.25);
+}
+
+.bcard > .right img{
+    width: 100%;
+    height: 678px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 5px 10px 50px 0px rgba(151, 71, 255, 0.25);
+}
+#brand-section > .ccard{
+    height: 696px;
+    padding: 29px 80px 10px;
+    position: relative;
+}
+.ccard > img{
+    width: 100%;
+    height: 509px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 50px 0px rgba(151, 71, 255, 0.25);
+    object-fit: cover;
+}
+.play{
+    position: absolute;
+    top: 25.45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.play img{
+    width: 112px;
+    height: 112px;
 }
