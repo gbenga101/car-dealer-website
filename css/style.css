@@ -123,7 +123,7 @@ nav{
 }
 /*done with the stying of nav bar for Desktop. starting with the styling of content inside the main section*/
 #main-content{
-    margin: 167px 0 0 55px;
+    margin: 157px 0 0 55px;
     width: 790px;
     height: 254px;
     display: flex;
@@ -147,9 +147,9 @@ nav{
     color: #F5F5F5;
     margin: 42px 338px 70px 0;
 }
-.btn{
+.hero > .btn{   
     text-align: center;
-    margin-top: 30px;
+    margin-top: 146px;
 }
 .btn > a{
     background: linear-gradient(10deg, #9747FF, #ba73db, #9747FF);
@@ -165,28 +165,27 @@ nav{
 /*Done with hero section moving to the about section*/
 .about-section{
     background-color: var(--color-dark);
-    padding: 68px 50px 20px;
+    padding: 68px 0px 20px 50px;
     display: flex;
     flex: 1;
 }
 .about-section .card{
-    height: 654px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.about-section > .left, .right{
-    width: 40%;
+.about-section .left, .right{
+    width: 45%;
 }
 .about-section .left img{
-    width: auto;
+    width: 100%;
     height: 500.26px;
     border-radius: 30px;
     background-color: var(--color-purple);
     box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
 }
 .about-section .right{
-    height: 100%;
+    height: 534px;
     background-image: url(../assets/images/about-img2.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -196,14 +195,13 @@ nav{
     font-size: 40px;
     margin: 6px 0 35px 94px;
     color: var(--color-white);
+    width: 169px;
 }
 .about-section .right p{
-    position: relative;
     font-size: 28px;
     line-height: 33.89px;
     color: var(--color-white-red);
     padding: 5px;
-    z-index: 1;
 }
 .about-section .right > img{
     position: absolute;
@@ -224,22 +222,26 @@ nav{
 }
 #brand-section > .bcard{
     padding: 16px 80px 29px;
+    width: 100%;
     display: flex;
     gap: 30px;
 }
-.bcard .left{
+.bcard > .left{
+    width: 755px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.bcard  .left img{
-    width: 715px;
+.bcard > .left img{
+    width: 100%;
     height: 326px;
     border-radius: 30px;
     object-fit: cover;
     box-shadow: 5px 10px 50px 0px rgba(151, 71, 255, 0.25);
 }
-
+.bcard > .right{
+    width: 497px;
+}
 .bcard > .right img{
     width: 100%;
     height: 678px;
