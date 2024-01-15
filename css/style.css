@@ -13,6 +13,10 @@
 body{
     margin: 0;
     background-color: var(--color-dark);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 body a{
     text-decoration: none;
@@ -150,6 +154,7 @@ nav{
 .btn{
     text-align: center;
     margin-top: 30px;
+    position: relative;
 }
 .btn > a{
     background: linear-gradient(10deg, #9747FF, #ba73db, #9747FF);
@@ -165,26 +170,32 @@ nav{
 /*Done with hero section moving to the about section*/
 .about-section{
     background-color: var(--color-dark);
-    padding: 68px 80px 20px;
+    padding: 68px 50px 20px;
+    display: flex;
+    flex: 1;
 }
 .about-section .card{
     height: 654px;
     display: flex;
-    gap: 60px;
+    width: 100%;
+    justify-content: space-between;
 }
 .about-section > .left, .right{
-    width: 100%;
+    width: 40%;
 }
 .about-section .left img{
-    width: 656px;
+    width: auto;
     height: 500.26px;
     border-radius: 30px;
     background-color: var(--color-purple);
     box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
 }
 .about-section .right{
-    position: relative;
     height: 100%;
+    background-image: url(../assets/images/about-img2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: cover;
 }
 .about-section .right h3{
     font-size: 40px;
