@@ -11,18 +11,15 @@
     box-sizing: border-box;
 }
 body{
+    box-sizing: border-box;
     margin: 0;
     background-color: var(--color-dark);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 body a{
     text-decoration: none;
 }
 .hero{
-    height: 100vh;
+    height: 817px;
     width: 100%;
     background-image: url(../assets/images/main-img.png);
     background-size: cover;
@@ -126,12 +123,11 @@ nav{
 }
 /*done with the stying of nav bar for Desktop. starting with the styling of content inside the main section*/
 #main-content{
-    margin: 85px 0 0 55px;
+    margin: 167px 0 0 55px;
     width: 790px;
     height: 254px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .main h1{
     color:#F5F5F5;
@@ -140,7 +136,7 @@ nav{
     font-weight: 800;
     line-height: 85px;
     text-align: left;
-    margin: 0;
+    margin-top: 0;
 }
 .powerful{
     color: #9747FF;
@@ -154,7 +150,6 @@ nav{
 .btn{
     text-align: center;
     margin-top: 30px;
-    position: relative;
 }
 .btn > a{
     background: linear-gradient(10deg, #9747FF, #ba73db, #9747FF);
