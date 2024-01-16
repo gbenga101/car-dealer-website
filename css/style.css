@@ -165,7 +165,7 @@ nav{
 /*Done with hero section moving to the about section*/
 .about-section{
     background-color: var(--color-dark);
-    padding: 68px 0px 20px 50px;
+    padding: 68px 0px 20px 80px;
     display: flex;
     flex: 1;
 }
@@ -173,13 +173,14 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height: 550px;
 }
 .about-section .left, .right{
     width: 45%;
 }
 .about-section .left img{
     width: 100%;
-    height: 500.26px;
+    height: 534px;
     border-radius: 30px;
     background-color: var(--color-purple);
     box-shadow: 2px 6px 10px 0px rgba(151, 71, 255, 0.25);
@@ -201,7 +202,7 @@ nav{
     font-size: 28px;
     line-height: 33.89px;
     color: var(--color-white-red);
-    padding: 5px;
+    padding: 5px 20px 0 5px;
 }
 .about-section .right > img{
     position: absolute;
@@ -250,7 +251,7 @@ nav{
     box-shadow: 5px 10px 50px 0px rgba(151, 71, 255, 0.25);
 }
 #brand-section > .ccard{
-    height: 696px;
+    height: 600px;
     padding: 29px 80px 10px;
     position: relative;
 }
@@ -266,8 +267,59 @@ nav{
     top: 25.45%;
     left: 50%;
     transform: translate(-50%, 50%);
+    display: flex;
+    flex: 1;
 }
 .play img{
     width: 112px;
     height: 112px;
+}
+#last-section{
+    height: auto;
+}
+#last-section > .scard, #last-section > .categories{
+    padding: 27px 80px 75px;
+    width: 100%;
+    display: flex;
+}
+.scard > .search{
+    align-items: center;
+    background-color: rgba(151, 71, 255, 0.8);
+    border-radius: 30px;
+    display: flex;
+    padding: 0 25px;
+    width: 1281px;
+    box-shadow: 2px 6px 40px 0px rgba(151, 71, 255, 0.25);
+}
+.search > input {
+    background-color: transparent;
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex: 1;
+    font-size: 2rem;
+}
+.search > input::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 77px;
+    text-align: left;
+}   
+.search > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.scard button > img{
+    width: 124px;
+    height: 124px;
+}
+.search>input, input::placeholder, button>img{
+    color: var(--color-white);
+}
+.categories{
+    align-items: center;
 }
