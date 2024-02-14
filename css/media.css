@@ -1,18 +1,52 @@
-@media (max-width: 1020px) and (min-width: 767px){
+@media (max-width: 1023px) and (min-width: 767px){
     body{
         width: 100%;
     }
     #main-content{
-        margin-left: 15px;
+        margin-left: 25px;
         width: auto;
         max-inline-size: auto;
     }
     #main-content h1{
         font-size: 4.0rem;
     }
-    
-
+    .about-section{
+        padding: 38px 0 0 25px;
+    }
+    .about-section .card{
+        height: 500px;
+        gap: 30px;
+    }
+    .about-section .left{
+        height: 500px;
+    }
+    .about-section .left > img{
+        height: 100%;
+    }
+    .about-section .right{
+        height: 500px;
+    }
+    .about-section .right h3{
+        margin: 0 0 5px 94px;
+    }
+    .about-section .right p{
+        font-size: 23px;
+        padding: 0 5px;
+    }
     #brand-section > .bcard{
         padding: 16px 30px 29px;
+        gap: 30px;
+    }
+    .bcard > .left{
+        height: 500px;
+    }
+    .bcard > .left img{
+        height: 220px;
+    }
+    .bcard > .right{
+        height: 470px;
+    }
+    .bcard > .right img{
+        height: 100%;
     }
 }
