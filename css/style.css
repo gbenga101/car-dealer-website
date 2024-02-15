@@ -376,6 +376,7 @@ nav{
     margin: 0 5px 77px 8px;
 }
 #last-section .icard{
+    display: flex;
     height: 440px;
     padding: 0 80px;
     box-shadow: 6px 10px 70px 0px rgba(151, 71, 255, 0.25);

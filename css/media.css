@@ -49,4 +49,41 @@
     .bcard > .right img{
         height: 100%;
     }
+    #brand-section > .ccard{
+        padding: 29px 30px 10px;
+        height: auto;
+    }
+    .ccard > img{
+        height: auto;
+    }
+    #last-section > .scard{
+        padding: 27px 40px 40px;
+    }
+    .scard button{
+        height: 80px;
+    }
+    .scard button > img{
+        height: 50px;
+    }
+    #last-section .categories{
+        margin: 0 35px 60px;
+        height: 200px;
+        padding: 10px;
+    }
+    .ecl{
+        height: 100px;
+        width: 150px;
+        border: 1px solid rgba(151, 71, 255, 1);
+    }
+    .icon{
+        height: 80px;
+        width: 60px;
+    }
+    #last-section .icard{
+        padding: 0 30px;
+        align-items: center;
+    }
+    .inside > .img{
+        height: 400px;
+    }
 }
