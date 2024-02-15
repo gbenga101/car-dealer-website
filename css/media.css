@@ -86,4 +86,24 @@
     .inside > .img{
         height: 400px;
     }
+    footer{
+        margin-top: 40px;
+        padding: 20px 30px;
+        height: auto;
+        justify-content: center;
+        gap: 25px;
+    }
+    footer > .pages{
+        width: auto;
+    }
+    .contact{
+        width: auto;
+    }
+    .i-light3{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .i-light2{
+        font-size: 25px;
+    }
 }
