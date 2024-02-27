@@ -337,7 +337,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex: 1;
-    box-shadow: 2px 6px 40px 0px rgba(151, 71, 255, 0.25);
+    box-shadow: 1px 6px 40px 0px rgba(151, 71, 255, 0.25);
 }
 .categories *{
     box-sizing: border-box;
