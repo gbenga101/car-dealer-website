@@ -177,8 +177,47 @@
     #brand-section > .bcard{
         padding: 15px 10px 10px;
         display: flex;
-        flex-direction: column;
+        height: 530px;
         gap: 10px;
     }
-    
+    .bcard > .left{
+        width: 100%;
+        height: 300px;
+        gap: 15px;
+    }
+    .bcard > .left img{
+        width: auto;
+        height: 100%;
+    }
+    #brand-section > .ccard{
+        height: auto;
+        padding: 29px 15px 10px;
+    }
+    .ccard > img{
+        width: 100%;
+        height: 250px;
+    }
+    .play img{
+        width: 70px;
+        height: 70px;
+    }
+    #last-section > .scard{
+        padding: 27px 15px 25px;
+        width: auto;
+    }
+    .scard > .search{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .search > input {
+        padding: 2px;
+        font-size: 1rem;
+    }
+    .search > input::placeholder{
+        font-size: 1rem;
+    }   
+    .scard button > img{
+        width: 20px;
+        height: 20px;
+    }
 }
