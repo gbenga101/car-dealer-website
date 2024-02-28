@@ -111,12 +111,74 @@
     body{
         max-width: 100%;
     }
+    nav{
+        padding: 0 12px;
+    }
     #main-content{
-        margin-left: 15px;
+        margin: 90px 12px 0;
         width: 100%;
         max-inline-size: auto;
     }
     #main-content h1{
-        font-size: 2.9rem;
+        font-size: 2.5rem;
+        line-height: 1.7ch;
     }
+    .main p{
+        margin: 20px 10px 0;
+        font-size: 1.5rem;
+    }
+    .hero > .btn{   
+        text-align: center;
+        margin-top: 6ch;
+    }
+    .btn > a{
+        padding: 10.04px 17.07px;
+        border: 1.59px solid #9747FF;
+        border-radius: 50px;
+        font-size: 22px;
+    }
+    .about-section{
+        padding: 28px 15px 10px;
+    }
+    .about-section .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        gap: 10px;
+    }
+    .about-section .left img{
+        width: 100%;
+        height: auto;
+    }
+    .about-section .left, .right{
+        width: 100%;
+    }
+    .about-section .right{
+        height: auto;
+    }
+    .about-section .right h3{
+        font-size: 35px;
+        margin: 10px auto;
+    }
+    .about-section .right p{
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0;
+        line-height: 2.3ch;
+    }
+    #brand-section{
+        margin-top: 10px;
+    }
+    #brand-section h2{
+        font-size: 35px;
+    }
+    #brand-section > .bcard{
+        padding: 15px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }

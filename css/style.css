@@ -20,7 +20,7 @@ body a{
     text-decoration: none;
 }
 .hero{
-    height: 817px;
+    height: 100vh;
     width: 100%;
     background-image: url(../assets/images/main-img.png);
     background-size: cover;
