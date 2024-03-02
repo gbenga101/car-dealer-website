@@ -251,24 +251,23 @@
         margin: 0 5px 37px 8px;
     }
     #last-section .icard{
-        height: auto
+        height: auto;
         padding: 20px 15px 10px;
     }
     .inside{
         box-sizing: border-box;
         width: 100%;
-        display: flex;
+        flex-direction: column;
         gap: 20px;
-        flex: 1;
     }
     .inside > .img{
-        width: 33%;
-        height: 440px;
+        width: auto;
+        height: 200px;
     }
     .img img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: 15px;
     }
 }
