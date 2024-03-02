@@ -220,4 +220,55 @@
         width: 20px;
         height: 20px;
     }
+    #last-section{
+        height: auto;
+    }
+    #last-section .categories{
+        height: 100px;
+        margin: 0 15px 15px;
+        padding: 5px 15px;
+    }
+    .ecl{
+        height: 50px;
+        width: 50px;
+        border: 1px solid rgba(151, 71, 255, 1);
+    }
+    .icon{
+        height: 30px;
+        width: 50px;
+    }
+    .down{
+        align-self: flex-end;
+    }
+    .line, .line *{
+        box-sizing: border-box;
+    }
+    .line, .line1{
+        margin: 35px 5px 0;
+        width: 210px;
+    }
+    .line1{
+        margin: 0 5px 37px 8px;
+    }
+    #last-section .icard{
+        height: auto
+        padding: 20px 15px 10px;
+    }
+    .inside{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex: 1;
+    }
+    .inside > .img{
+        width: 33%;
+        height: 440px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
 }
