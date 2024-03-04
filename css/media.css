@@ -2,6 +2,24 @@
     body{
         width: 100%;
     }
+    .links{
+        display: none;
+        visibility: hidden;
+    }
+    .close{
+        display: none;
+        visibility: hidden;
+    }
+    .lik{
+        display: none;
+    }
+    .button{
+        display: none;
+        visibility: hidden;
+    }
+    .dropdown{
+        display: block;
+    }
     #main-content{
         margin-left: 25px;
         width: auto;

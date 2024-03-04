@@ -122,6 +122,9 @@ nav{
     color: #D9D9D9;
     border: none;
 }
+.dropdown{
+    display: none;
+}
 /*done with the stying of nav bar for Desktop. starting with the styling of content inside the main section*/
 #main-content{
     margin: 120px 0 0 55px;
@@ -459,4 +462,336 @@ footer > .pages{
     width: 45px;
     height: 35px;
     margin: 5px;
+}
+
+/*Responsive css code for tablet and mobile*/
+@media (max-width: 1023px) and (min-width: 767px){
+    body{
+        width: 100%;
+    }
+    .links{
+        display: flex;
+        width: auto;
+        flex: 1;
+    }
+    .links li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .links a{
+        color: #D9D9D9;
+        font-size: 16px;
+    }
+    .button{
+        display: flex;
+        gap: 15px;
+    }
+    .login, .register{
+        padding: 7.88pdx 13.4dpx;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .drsopdown{
+        display: flex;
+        align-items: center;
+    }
+    #main-content{
+        margin-left: 25px;
+        width: auto;
+        max-inline-size: auto;
+    }
+    #main-content h1{
+        font-size: 4.0rem;
+    }
+    .about-section{
+        padding: 38px 0 0 25px;
+    }
+    .about-section .card{
+        height: 500px;
+        gap: 30px;
+    }
+    .about-section .left{
+        height: 500px;
+    }
+    .about-section .left > img{
+        height: 100%;
+    }
+    .about-section .right{
+        height: 500px;
+    }
+    .about-section .right h3{
+        margin: 0 0 5px 94px;
+    }
+    .about-section .right p{
+        font-size: 23px;
+        padding: 0 5px;
+    }
+    #brand-section > .bcard{
+        padding: 16px 30px 29px;
+        gap: 30px;
+    }
+    .bcard > .left{
+        height: 500px;
+    }
+    .bcard > .left img{
+        height: 220px;
+    }
+    .bcard > .right{
+        height: 470px;
+    }
+    .bcard > .right img{
+        height: 100%;
+    }
+    #brand-section > .ccard{
+        padding: 29px 30px 10px;
+        height: auto;
+    }
+    .ccard > img{
+        height: auto;
+    }
+    #last-section > .scard{
+        padding: 27px 40px 40px;
+    }
+    .scard button{
+        height: 80px;
+    }
+    .scard button > img{
+        height: 50px;
+    }
+    #last-section .categories{
+        margin: 0 35px 60px;
+        height: 200px;
+        padding: 10px;
+    }
+    .ecl{
+        height: 100px;
+        width: 150px;
+        border: 1px solid rgba(151, 71, 255, 1);
+    }
+    .icon{
+        height: 80px;
+        width: 60px;
+    }
+    #last-section .icard{
+        padding: 0 30px;
+        align-items: center;
+    }
+    .inside > .img{
+        height: 400px;
+    }
+    footer{
+        margin-top: 20px;
+        padding: 15px;
+        height: auto;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    footer > .pages{
+        width: auto;
+    }
+    .contact{
+        width: auto;
+    }
+    .i-light3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .i-light2{
+        font-size: 15px;
+    }
+}
+@media (max-width: 766px){
+    body{
+        max-width: 100%;
+    }
+    nav{
+        padding: 0 20px;
+    }
+    .links{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #main-content{
+        margin: 90px 12px 0;
+        width: 100%;
+        max-inline-size: auto;
+    }
+    #main-content h1{
+        font-size: 2.5rem;
+        line-height: 1.7ch;
+    }
+    .main p{
+        margin: 20px 10px 0;
+        font-size: 1.5rem;
+    }
+    .hero > .btn{   
+        text-align: center;
+        margin-top: 6ch;
+    }
+    .btn > a{
+        padding: 10.04px 17.07px;
+        border: 1.59px solid #9747FF;
+        border-radius: 50px;
+        font-size: 22px;
+    }
+    .about-section{
+        padding: 28px 15px 10px;
+    }
+    .about-section .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex: 1;
+        gap: 10px;
+    }
+    .about-section .left img{
+        width: 100%;
+        height: auto;
+    }
+    .about-section .left, .right{
+        width: 100%;
+    }
+    .about-section .right{
+        height: auto;
+    }
+    .about-section .right h3{
+        font-size: 35px;
+        margin: 10px auto;
+    }
+    .about-section .right p{
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0;
+        line-height: 2.3ch;
+    }
+    #brand-section{
+        margin-top: 10px;
+    }
+    #brand-section h2{
+        font-size: 35px;
+    }
+    #brand-section > .bcard{
+        padding: 15px 10px 10px;
+        display: flex;
+        height: 530px;
+        gap: 10px;
+    }
+    .bcard > .left{
+        width: 100%;
+        height: 300px;
+        gap: 15px;
+    }
+    .bcard > .left img{
+        width: auto;
+        height: 100%;
+    }
+    #brand-section > .ccard{
+        height: auto;
+        padding: 29px 15px 10px;
+    }
+    .ccard > img{
+        width: 100%;
+        height: 250px;
+    }
+    .play img{
+        width: 70px;
+        height: 70px;
+    }
+    #last-section > .scard{
+        padding: 27px 15px 25px;
+        width: auto;
+    }
+    .scard > .search{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .search > input {
+        padding: 2px;
+        font-size: 1rem;
+    }
+    .search > input::placeholder{
+        font-size: 1rem;
+    }   
+    .scard button > img{
+        width: 20px;
+        height: 20px;
+    }
+    #last-section{
+        height: auto;
+    }
+    #last-section .categories{
+        height: 100px;
+        margin: 0 15px 15px;
+        padding: 5px 15px;
+    }
+    .ecl{
+        height: 50px;
+        width: 50px;
+        border: 1px solid rgba(151, 71, 255, 1);
+    }
+    .icon{
+        height: 30px;
+        width: 50px;
+    }
+    .down{
+        align-self: flex-end;
+    }
+    .line, .line *{
+        box-sizing: border-box;
+    }
+    .line, .line1{
+        margin: 35px 5px 0;
+        width: 210px;
+    }
+    .line1{
+        margin: 0 5px 37px 8px;
+    }
+    #last-section .icard{
+        height: auto;
+        padding: 20px 15px 10px;
+    }
+    .inside{
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inside > .img{
+        width: auto;
+        height: 200px;
+    }
+    .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    footer{
+        margin-top: 20px;
+        padding: 15px;
+        height: auto;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    footer > .pages{
+        width: auto;
+    }
+    .contact{
+        width: auto;
+    }
+    .i-light3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .i-light2{
+        font-size: 15px;
+    }
 }
