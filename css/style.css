@@ -778,14 +778,15 @@ footer > .pages{
         margin-top: 20px;
         padding: 15px;
         height: auto;
+        flex-direction: column;
         justify-content: space-between;
-        gap: 15px;
+        gap: 20px;
     }
     footer > .pages{
         width: auto;
-    }
-    .contact{
-        width: auto;
+        height: auto;
+        margin-top: 25px;
+        gap: 10px;
     }
     .i-light3{
         font-size: 20px;
@@ -793,5 +794,26 @@ footer > .pages{
     }
     .i-light2{
         font-size: 15px;
+    }
+    .contact{
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .items{
+        box-sizing: border-box;
+        gap: 10px;
+    }
+    .items *{
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .it{
+        width: 45px;
+        height: 35px;
+        margin: 5px;
     }
 }
