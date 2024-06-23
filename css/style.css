@@ -415,7 +415,9 @@ nav{
     object-fit: cover;
     border-radius: 30px;
 }
-
+.mobile{
+    visibility: hidden;
+}
 footer{
     height: 448px;
     padding: 63px 120px 95px 80px;
@@ -797,13 +799,24 @@ footer > .pages{
         object-fit: cover;
         border-radius: 15px;
     }
+    .mobile{
+        visibility: visible;
+        position: relative;
+        margin: 0 auto;
+        top: 20px;
+        left: 10px;
+    }
     footer{
-        margin-top: 20px;
+        margin: 20px 0;
         padding: 15px;
         height: auto;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
+        gap: 10px;
+        text-align: center;
+    }
+    footer > .logo{
+        display: none;
     }
     footer > .pages{
         width: auto;
@@ -812,11 +825,11 @@ footer > .pages{
         gap: 10px;
     }
     .i-light3{
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 400;
     }
     .i-light2{
-        font-size: 15px;
+        font-size: 13px;
     }
     .contact{
         width: auto;
@@ -826,17 +839,22 @@ footer > .pages{
     }
     .items{
         box-sizing: border-box;
+        justify-content: center;
         gap: 10px;
+    }
+    .w{
+        visibility: hidden;
     }
     .items *{
         height: auto;
         display: flex;
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        gap: 20px;
     }
     .it{
-        width: 45px;
-        height: 35px;
+        width: 15px;
+        height: 15px;
         margin: 5px;
     }
 }
