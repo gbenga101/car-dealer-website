@@ -128,7 +128,7 @@ nav{
 /*done with the stying of nav bar for Desktop. starting with the styling of content inside the main section*/
 #main-content{
     margin: 0 0 0 55px;
-    width: 790px;
+    width: 60%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -641,16 +641,17 @@ footer > .pages{
         width: 100%;
         max-inline-size: auto;
     }
-    .main{
+    #main-content > .main{
         display: flex;
         flex-direction: column;
+        max-width: 100%;
         height: 80vh;
         justify-content: space-evenly;
     }
     #main-content h1{
         font-size: 2.2rem;
         line-height: 1.7ch;
-        margin: 0 10px;
+        margin: 0 5px;
     }
     .main p{
         margin: 0px 10px;
@@ -675,7 +676,6 @@ footer > .pages{
         width: 100%;
         height: auto;
         flex: 1;
-        gap: 10px;
     }
     .about-section .left img{
         width: 100%;
@@ -701,6 +701,7 @@ footer > .pages{
         margin-top: 10px;
     }
     #brand-section h2{
+        margin: 25px auto 10px;
         font-size: 35px;
     }
     #brand-section > .bcard{
@@ -813,7 +814,6 @@ footer > .pages{
         flex-direction: row;
         justify-content: space-between;
         gap: 10px;
-        text-align: center;
     }
     footer > .logo{
         display: none;
@@ -826,31 +826,26 @@ footer > .pages{
     }
     .i-light3{
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 500;
     }
     .i-light2{
-        font-size: 13px;
+        font-size: 15px;
     }
     .contact{
         width: auto;
         height: auto;
         margin-top: 15px;
+        align-items: center;
         gap: 15px;
-    }
-    .items{
-        box-sizing: border-box;
-        justify-content: center;
-        gap: 10px;
-    }
-    .w{
-        visibility: hidden;
     }
     .items *{
         height: auto;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+        gap: 15px;
+    }
+    a img{
+        width: 30px;
+        height: 30px;
     }
     .it{
         width: 15px;
